@@ -86,14 +86,14 @@
           <header class="form-head">
             <h2>Contact Us</h2>
           </header>
-          <form action="">
+          <form action="https://formspree.io/f/xqkwjbrj" method="POST">
             <div class="name-form">
               <label for="name">Name:</label>
-              <input type="text" name="name" id="name" />
+              <input type="text" name="name" id="name" required minlength="4" />
             </div>
             <div class="email-form">
               <label for="email">E-mail:</label>
-              <input type="email" name="email" id="email" />
+              <input type="email" required name="_replyto" id="email" />
             </div>
             <button type="submit">Submit</button>
           </form>
