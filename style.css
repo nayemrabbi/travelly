@@ -55,6 +55,10 @@ button:hover {
 .main-head {
   background-color: #131c27;
   color: white;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 nav {
   display: flex;
@@ -143,5 +147,75 @@ nav ul {
   }
   to {
     transform: translate(0%, 0%);
+  }
+}
+/* Benefits Seciton*/
+.benefits-head {
+  background-color: #343c44;
+  padding: 2.6rem;
+  min-height: 18vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.benefits-head h3 {
+  padding: 1rem;
+}
+.cards {
+  width: 90%;
+  margin: auto;
+  min-height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.card {
+  text-align: center;
+  flex: 1 1 25rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  box-shadow: 0 10px 70px 0 rgba(103, 151, 255, 0.22);
+}
+.card img {
+  max-width: 15%;
+  margin: 2rem;
+}
+.card h4,
+.card p {
+  padding: 1rem;
+  line-height: 1.8;
+}
+
+.card-icon {
+  background: #27394e;
+}
+
+/* Media Query */
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .cloud {
+    height: 40rem;
+    pointer-events: none;
+  }
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+  .moving-cloud-2 {
+    z-index: -2;
+  }
+  .locations-head h3 {
+    background: rgba(19, 28, 39, 0.9);
+    -webkit-text-fill-color: white;
   }
 }
